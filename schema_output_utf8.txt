@@ -1,0 +1,848 @@
+﻿Starting analysis...
+
+--- Schema for about__chiefmentordata ---
+Type: Object
+{
+  "banner": {
+    "title": "String",
+    "image": "String"
+  },
+  "content": {
+    "title": "String",
+    "ourleadsimage": "String",
+    "cheifmentordeskimage": "String",
+    "paragraphs": [
+      "String"
+    ],
+    "signOff": {
+      "text": "String",
+      "name": "String",
+      "title": "String"
+    },
+    "cta": {
+      "text": "String",
+      "link": "String"
+    }
+  }
+}
+
+--- Schema for about__governingbodycouncildata ---
+Type: Array
+{
+  "id": "Number",
+  "image": "Mixed",
+  "name": "String",
+  "department": "String",
+  "designation": "String",
+  "phone": "String",
+  "email": "String"
+}
+
+--- Schema for about__ourteamdata ---
+Type: Object
+{
+  "faculty": [
+    {
+      "name": "String",
+      "designation": "String",
+      "email": "String",
+      "department": "String",
+      "image": "Mixed"
+    }
+  ],
+  "administrative": [
+    {
+      "name": "String",
+      "designation": "String",
+      "email": "String",
+      "department": "String"
+    }
+  ],
+  "media": [
+    {
+      "name": "String",
+      "designation": "String",
+      "email": "String",
+      "department": "String"
+    }
+  ]
+}
+
+--- Schema for about__pressreleasesdata ---
+Type: Object
+{
+  "2020": [
+    "String"
+  ],
+  "2021": [
+    "String"
+  ],
+  "2022": [
+    "String"
+  ],
+  "2023": [
+    "String"
+  ],
+  "2024": [
+    "String"
+  ]
+}
+
+--- Schema for about__principaldatap ---
+Type: Object
+{
+  "banner": {
+    "title": "String",
+    "image": "String"
+  },
+  "content": {
+    "title": "String",
+    "image": "String",
+    "email": "String",
+    "paragraphs": [
+      "String"
+    ],
+    "signOff": {
+      "text": "String",
+      "name": "String",
+      "title": "String"
+    }
+  }
+}
+node : Error processing about__profileofcollegedata: 
+Unexpected token '='
+At line:1 char:1
++ node scripts/analyze_schemas.cjs > 
+schema_output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo          : NotSpecified: (Error p 
+   rocessin...ected token '=':String) [], RemoteExc  
+  eption
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+--- Schema for academics__academiccalendardata ---
+Type: Object
+{
+  "semesterTitle": "String",
+  "pdfLink": "String",
+  "flipbook": {
+    "enabled": "Boolean",
+    "note": "String",
+    "subnote": "String"
+  },
+  "meta": {
+    "updatedOn": "String",
+    "uploadedBy": "String"
+  }
+}
+
+--- Schema for academics__departmentsdata ---
+Type: Object
+{
+  "history": {
+    "name": "String",
+    "image": "String",
+    "about": "String",
+    "description": [
+      {
+        "title": "String",
+        "content": "String"
+      }
+    ]
+  },
+  "commerce-and-management": {
+    "name": "String",
+    "image": "String",
+    "about": "String",
+    "description": [
+      {
+        "title": "String",
+        "content": "String"
+      }
+    ]
+  },
+  "computer-science": {
+    "name": "String",
+    "image": "String",
+    "about": "String",
+    "description": [
+      {
+        "title": "String",
+        "content": "String"
+      }
+    ]
+  },
+  "mathematics": {
+    "name": "String",
+    "image": "String",
+    "about": "String",
+    "description": [
+      {
+        "title": "String",
+        "content": "String"
+      }
+    ]
+  },
+  "bio-technology": {
+    "name": "String",
+    "image": "String",
+    "about": "String",
+    "description": [
+      {
+        "title": "String",
+        "content": "String"
+      }
+    ]
+  },
+  "english": {
+    "name": "String",
+    "image": "String",
+    "about": "String",
+    "description": [
+      {
+        "title": "String",
+        "content": "String"
+      }
+    ]
+  },
+  "visual-communication": {
+    "name": "String",
+    "image": "String",
+    "about": "String",
+    "description": [
+      {
+        "title": "String",
+        "content": "String"
+      }
+    ]
+  },
+  "library": {
+    "name": "String",
+    "image": "String",
+    "about": "String",
+    "description": [
+      {
+        "title": "String",
+        "content": "String"
+      }
+    ]
+  }
+}
+
+--- Schema for academics__pgprogramsdetails ---
+Type: Array
+{
+  "id": "Number",
+  "programme": "String",
+  "degree": "String",
+  "stream": "String",
+  "category": "String"
+}
+
+--- Schema for academics__prospectusdata ---
+Type: Array
+{
+  "year": "String",
+  "doc": "String"
+}
+
+--- Schema for academics__ugprogramsdatadetails ---
+Type: Array
+{
+  "id": "Number",
+  "programme": "String",
+  "degree": "String",
+  "stream": "String",
+  "category": "String"
+}
+
+--- Schema for academics__valuedaddedcoursesdata ---
+Type: Object
+{
+  "AdditionalCoursesData": [
+    {
+      "title": "String",
+      "icon": "String",
+      "courseDescription": "String",
+      "syllabusPdf": "String",
+      "images": [
+        "String"
+      ],
+      "faculty": [
+        {
+          "image": "String",
+          "name": "String",
+          "department": "String",
+          "designation": "String",
+          "phone": "String",
+          "email": "String"
+        }
+      ]
+    }
+  ],
+  "AdditionalCoursesDataGeneralIncharge": [
+    {
+      "image": "String",
+      "name": "String",
+      "department": "String",
+      "designation": "String",
+      "phone": "String",
+      "email": "String"
+    }
+  ]
+}
+
+--- Schema for campus-life__seeddata ---
+Type: Array
+{
+  "id": "Number",
+  "image": "String",
+  "text": "String"
+}
+
+--- Schema for committees__committeesdata ---
+Type: Object
+{
+  "academic-council": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String",
+        "image": "String"
+      }
+    ],
+    "circulars": [
+      {
+        "title": "String",
+        "file": "String"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "Number",
+        "text": "String"
+      }
+    ]
+  },
+  "governing-body": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String",
+        "image": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "admission": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "library": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "maintenance": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "hostel": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+Error processing home__allhomedata: leads is not 
+defined
+Error processing home__announcementsdata: items is 
+not defined
+      "Mixed"
+    ]
+  },
+  "discipline": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "cultural": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "social-media": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "transport": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "website": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "student-information": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "finance": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "naac": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "anti-ragging": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "staff-student-welfare": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "exam": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "training-placement": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "ioac": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "nss": {
+    "members": [
+      {
+        "id": "Number",
+        "name": "String",
+        "designation": "String",
+        "email": "String"
+      }
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "rrc": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "jci": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  },
+  "code-club": {
+    "members": [
+      "Mixed"
+    ],
+    "circulars": [
+      "Mixed"
+    ],
+    "objectives": [
+      "Mixed"
+    ]
+  }
+}
+
+--- Schema for contact__contactdata ---
+Type: Object
+{
+  "email": [
+    {
+      "label": "String",
+      "value": "String"
+    }
+  ],
+  "website": [
+    {
+      "label": "String",
+      "value": "String"
+    }
+  ],
+  "address": [
+    {
+      "label": "String",
+      "value": "String"
+    }
+  ],
+  "phone": [
+    {
+      "label": "String",
+      "value": "String"
+    }
+  ]
+}
+
+--- Schema for events__eventsdata ---
+Type: Array
+{
+  "id": "String",
+  "title": "String",
+  "description": "String",
+  "images": [
+    "String"
+  ]
+}
+
+--- Schema for events__upcommingeventspreviewdata ---
+Type: Array
+{
+  "title": "String",
+  "path": "String",
+  "date": "String",
+  "description": "String",
+  "image": "String",
+  "postedBy": "String",
+  "file": "String"
+}
+
+--- Schema for home__achievementsstatsdata ---
+Type: Object
+{
+  "items": [
+    {
+      "label": "String",
+      "icons": "String",
+      "startValue": "Number",
+      "endValue": "Number",
+      "suffix": "String"
+    }
+  ]
+}
+
+--- Schema for home__admissionsdata ---
+Type: Object
+{
+  "title": "String",
+  "formTitle": "String",
+  "paragraphs": [
+    "String"
+  ]
+}
+
+--- Schema for home__carouseldata ---
+Type: Object
+{
+  "images": [
+    "String"
+  ]
+}
+
+--- Schema for home__circularpreviewdata ---
+Type: Array
+{
+  "title": "String",
+  "path": "String",
+  "file": "String",
+  "description": "String",
+  "date": "String",
+  "postedBy": "String"
+}
+
+--- Schema for home__missionvisiondata ---
+Type: Object
+{
+  "mission": {
+    "title": "String",
+    "description": "String"
+  },
+  "vision": {
+    "title": "String",
+    "description": "String"
+  },
+  "image": "String",
+  "videoUrl": "String",
+  "ctaText": "String",
+  "ctaLink": "String"
+}
+
+--- Schema for home__newstickerdata ---
+Type: Object
+{
+  "items": [
+    "String"
+  ]
+}
+
+--- Schema for home__ourcampusdata ---
+Type: Object
+{
+  "title": "String",
+  "image": "String",
+  "videoUrl": "String",
+  "paragraphs": [
+    "String"
+  ]
+}
+
+--- Schema for home__ourleads ---
+Type: Array
+{
+  "role": "String",
+  "img": "Mixed",
+  "path": "String",
+  "name": "Mixed"
+}
+
+--- Schema for home__ourschoolscollegesdata ---
+Type: Object
+{
+  "title": "String",
+  "logos": [
+    "String"
+  ]
+}
+
+--- Schema for home__recruitersdata ---
+Type: Object
+{
+  "title": "String",
+  "logos": [
+    "String"
+  ]
+}
+
+--- Schema for home__testimonialdata ---
+Type: Object
+{
+  "title": "String",
+  "videos": [
+    "String"
+  ]
+}
+
+--- Schema for home__welcomedata ---
+Type: Object
+{
+  "title": "String",
+  "description": "String"
+}
+
+--- Schema for iqac__nirfdata ---
+Type: Array
+{
+  "id": "Number",
+  "doc": "String",
+  "label": "String"
+}
+
+--- Schema for placements__placementrecords ---
+Type: Array
+{
+  "label": "String",
+  "file": "String"
+}
+
+--- Schema for placements__trainingandplacementsdata ---
+Type: Object
+{
+  "TrainingAndPlacementsFacultyData": [
+    {
+      "image": "String",
+      "name": "String",
+      "department": "String",
+      "designation": "String",
+      "phone": "String",
+      "email": "String"
+    }
+  ],
+  "activities": [
+    {
+      "id": "Number",
+      "text": "String"
+    }
+  ]
+}
