@@ -32,11 +32,34 @@ router.post("/imageupload", upload.single("image"), (req, res) => {
     return res.status(400).json({ error: "No file uploaded" });
   }
 
+  try {
+    // Read all existing files in temp
+    const existingFiles = fs.readdirSync(TEMP_DIR);
+
+    // Keep the last uploaded file (the new one)
+    const newFile = req.file.filename;
+
+    // Delete all previous temp files except the new one
+    existingFiles.forEach(file => {
+      if (file !== newFile) {
+        const filePath = path.join(TEMP_DIR, file);
+        if (fs.existsSync(filePath)) {
+          fs.unlinkSync(filePath);
+          console.log("Deleted old temp file:", file);
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Error cleaning temp folder:", error);
+  }
+
+  // DO NOT CHANGE ANYTHING BELOW
   res.json({
     fileName: req.file.filename,
     tempPath: `/assets/images/temp/${req.file.filename}`,
   });
 });
+
 
 /* -----------------------------------------
    Move temp file to permanent storage
