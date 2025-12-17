@@ -10,6 +10,7 @@
     "seed": "node scripts/seedDatabase.js",
     "seed:full": "node scripts/seedDatabase.js",
     "seed:incremental": "node scripts/seedDatabase.js",
+    "seed:specific": "node scripts/seedSpecificData.js",
     "seed:verify": "node scripts/verifyDb.js",
     "db:cleanup": "node scripts/cleanupDb.js",
     "test": "jest --coverage",

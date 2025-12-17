@@ -41,7 +41,7 @@ const collections = [
   "academics__ugprogramsdatadetails",
   "academics__valueaddedcoursesdata",
   "campus-life__seeddata",
-  "committees__committiesdata",
+  "commitees__committiesdata",
   "contact__contactdata",
 ];
 

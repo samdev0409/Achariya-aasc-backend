@@ -12,7 +12,7 @@ import academics__prospectusdataRoutes from "./academics__prospectusdataRoutes.j
 import academics__ugprogramsdatadetailsRoutes from "./academics__ugprogramsdatadetailsRoutes.js";
 import academics__valueaddedcoursesdataRoutes from "./academics__valueaddedcoursesdataRoutes.js";
 import campus_life__seeddataRoutes from "./campus-life__seeddataRoutes.js";
-import committees__committiesdataRoutes from "./committees__committiesdataRoutes.js";
+import commitees__committiesdataRoutes from "./commitees__committiesdataRoutes.js";
 import contact__contactdataRoutes from "./contact__contactdataRoutes.js";
 import events__eventsdataRoutes from "./events__eventsdataRoutes.js";
 import events__upcommingeventspreviewdataRoutes from "./events__upcommingeventspreviewdataRoutes.js";
@@ -31,6 +31,9 @@ import home__welcomedataRoutes from "./home__welcomedataRoutes.js";
 import iqac__nirfdataRoutes from "./iqac__nirfdataRoutes.js";
 import placements__placementrecordsRoutes from "./placements__placementrecordsRoutes.js";
 import placements__trainingandplacementsdataRoutes from "./placements__trainingandplacementsdataRoutes.js";
+
+import home__topheaderdataRoutes from "./home__topheaderdataRoutes.js";
+import aasc_beats__aascbeatsdataRoutes from "./aasc_beats__aascbeatsdataRoutes.js";
 
 const router = express.Router();
 
@@ -62,7 +65,7 @@ router.use(
   academics__valueaddedcoursesdataRoutes
 );
 router.use("/campus-life/seeddata", campus_life__seeddataRoutes);
-router.use("/committees/committiesdata", committees__committiesdataRoutes);
+router.use("/commitees__committiesdata", commitees__committiesdataRoutes);
 router.use("/contact/contactdata", contact__contactdataRoutes);
 router.use("/events/eventsdata", events__eventsdataRoutes);
 router.use(
@@ -87,5 +90,8 @@ router.use(
   "/placements/trainingandplacementsdata",
   placements__trainingandplacementsdataRoutes
 );
+
+router.use("/home/topheaderdata", home__topheaderdataRoutes);
+router.use("/aasc-beats/aascbeatsdata", aasc_beats__aascbeatsdataRoutes);
 
 export default router;

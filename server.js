@@ -7,7 +7,8 @@ import morgan from "morgan";
 import compression from "compression";
 import mongoSanitize from "express-mongo-sanitize";
 import rateLimit from "express-rate-limit";
-import ImageuploadRoutes from "./routes/uploadimage.js";
+import ImageuploadRoutes from "./routes/uploads-routes/uploadimage.js";
+import DocumentuploadRoutes from "./routes/uploads-routes/uploaddocument.js";
 
 // Load environment variables
 dotenv.config();
@@ -97,6 +98,7 @@ app.use("/api/auth", authRoutes);
 
 // Upload Routes
 app.use("/api/upload", ImageuploadRoutes);
+app.use("/api/upload/document", DocumentuploadRoutes);
 
 // Generated CRUD Routes (for all 35 collections)
 app.use("/api", routes);

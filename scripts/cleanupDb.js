@@ -27,7 +27,7 @@ const cleanup = async () => {
 
     const badCollections = [
       "home__missionvisiondata",
-      "committees__committiesdata",
+      "commitees__committiesdata",
       "academics__departmentsdata",
       "about__ourteamdata",
     ];

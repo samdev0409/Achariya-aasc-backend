@@ -12,7 +12,7 @@ import Academics_prospectusdataRoutes from "./academics__prospectusdataRoutes.js
 import Academics_ugprogramsdatadetailsRoutes from "./academics__ugprogramsdatadetailsRoutes.js";
 import Academics_valueaddedcoursesdataRoutes from "./academics__valueaddedcoursesdataRoutes.js";
 import CampusLife_seeddataRoutes from "./campus-life__seeddataRoutes.js";
-import Committees_committiesdataRoutes from "./committees__committiesdataRoutes.js";
+import Committees_committiesdataRoutes from "./commitees__committiesdataRoutes.js";
 import Contact_contactdataRoutes from "./contact__contactdataRoutes.js";
 import Events_eventsdataRoutes from "./events__eventsdataRoutes.js";
 import Events_upcommingeventspreviewdataRoutes from "./events__upcommingeventspreviewdataRoutes.js";
@@ -64,7 +64,7 @@ router.use(
   Academics_valueaddedcoursesdataRoutes
 );
 router.use("/campus-life__seeddata", CampusLife_seeddataRoutes);
-router.use("/committees__committiesdata", Committees_committiesdataRoutes);
+router.use("/commitees__committiesdata", Committees_committiesdataRoutes);
 router.use("/contact__contactdata", Contact_contactdataRoutes);
 router.use("/events__eventsdata", Events_eventsdataRoutes);
 router.use(
