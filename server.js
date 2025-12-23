@@ -31,7 +31,6 @@ const app = express();
 // Security Headers
 app.use(helmet());
 
-
 // CORS Configuration
 app.use(
   cors({
@@ -110,6 +109,39 @@ app.use((req, res, next) => {
 });
 
 app.use("/assets", express.static(path.join(process.cwd(), "assets")));
+
+// Preview PDF route for admin (serves both temp and permanent PDFs)
+app.get("/preview-pdf/:filename", (req, res) => {
+  const filename = req.params.filename;
+
+  // Try temp folder first
+  const tempPath = path.join(
+    process.cwd(),
+    "assets",
+    "documents",
+    "temp",
+    filename
+  );
+  const permanentPath = path.join(
+    process.cwd(),
+    "assets",
+    "documents",
+    filename
+  );
+
+  // Check if file exists in temp folder
+  if (require("fs").existsSync(tempPath)) {
+    return res.sendFile(tempPath);
+  }
+
+  // Check if file exists in permanent folder
+  if (require("fs").existsSync(permanentPath)) {
+    return res.sendFile(permanentPath);
+  }
+
+  // File not found
+  res.status(404).json({ message: "PDF not found" });
+});
 
 // 404 & Error Handling
 app.use(notFound);

@@ -1,4 +1,4 @@
-import Model from '../models/academics__prospectusdata.js';
+import Model from "../models/academics__prospectusdata.js";
 
 export const getAll = async (req, res) => {
   try {
@@ -26,7 +26,7 @@ export const create = async (req, res) => {
   try {
     let payload = req.body;
     if (!payload.data) {
-       payload = { data: payload };
+      payload = { data: payload };
     }
     const newData = new Model(payload);
     await newData.save();
@@ -39,7 +39,9 @@ export const create = async (req, res) => {
 export const update = async (req, res) => {
   try {
     const { id } = req.params;
-    const updatedData = await Model.findByIdAndUpdate(id, req.body, { new: true });
+    const updatedData = await Model.findByIdAndUpdate(id, req.body, {
+      new: true,
+    });
     res.status(200).json(updatedData);
   } catch (error) {
     res.status(400).json({ message: error.message });

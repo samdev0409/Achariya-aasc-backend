@@ -181,6 +181,12 @@ const TARGET_FILES = [
     exportName: "default",
     type: "singleton",
   },
+  {
+    relativePath: "academics/departmentsdata.js",
+    collectionName: "academics__departmentsdata",
+    exportName: "departmentDataMapper", // Named export containing all departments
+    type: "singleton", // Single document containing all department data
+  },
 ];
 
 // -----------------------------
